@@ -1,0 +1,28 @@
+﻿What happens when you initialize a repository? Why do you need to do it?
+>> A .git directory is created with a number of sub directories.  Essentially, it looks like the structure of the repository is created and awaiting file assignment.   You need to initialize it much like you have to construct an object before acting on it.
+
+How is the staging area different from the working directory and the repository?
+>>The staging area is different than the working directory in that it shows which files in the working directory are currently being tracked and which are not.  It allows you a little more refined operation of the folder/project tracking.
+What value do you think it offers?
+>>It allows us to track just the files we would like to which has the advantage of setting our initial file tracking into full file packets vs. partially created thoughts.  I also wonder if it will track file removals when later one decides to use a different file or decides to remove a file entirely from the directory - suspect that it will.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+>>Having the control of which files will be commited to the master per commit operation definitely make it more likely that each change made in a file object will be pushed up as a separate logical change.  
+>>>>Currently a little confused on what will happen if I commit a file change, look back at another commit (i.e. checkout older for a side bug fix) and then recheckout the master.  Will it override files that were saved but not committed?  (i.e. will work be lost by not comitting all changed files?)
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+>>Branches seem like a nice way to keep sideline potentials organized. Or potentially, just to do an overall large update w/o touching the master branch.  As an example - SpringCleaningBranch where you go through and do some extra torture testing on the code but aren't sure you will make any final changes.  Or potentially have different branches for each person working on the code - perhaps multiple people working a similar idea, with the optimal one being merged in?
+
+How do the diagrams help you visualize the branch structure?
+>>Seeing a picture and also visually seeing how some parts are not reachable by other branches becomes clearer.  Also, seeing the detached head and the reason for it was likely easier to understand wth the diagram up as well.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+>>A consolidation of the changes in both lines of code activity.  To better understand the flow of changes and the parenting of each commit as well as what is unreachable from each branches point of view.
+
+What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+manually?
+>>The automatic merging saves a lot of time going through and tracing what was done when and where, but the fact that it also goes manually when it sees a potential issue when areas of the same code were changed is potentially the more important part.  It would be better to play it safe and mark more areas as potential issues and have to manually resolve than introduce odd, hard-to-find bugs.
