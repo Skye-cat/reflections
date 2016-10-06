@@ -1,0 +1,23 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+--I used FC but it quickly showed the few lines of code changed in thousands of lines and the issue was spotted in about a minute.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+--Depending on the set up of the history, it could be easier to look back at a particular change you made that you want to implement something similar if you remember the date you did something or if it is grouped as well it could potentially let you see past bugs if one feels familar.  Seeing a similar bug and the fix you did post may provide insights.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+--Cons: A user may not save/commit that often  and the version differences will be very large and not allow for refined look back and/or lost data if version is lost.  pro: can have logical start/stop points based on organizational units vs. random save points that could be in the middle of code or thought (could create bugs)
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+>>The files being used with Git are interrelated while generally a Google Doc file stands on its own.
+
+
+How can you use the commands git log and git diff to view the history of files?
+>>Using git log allows you to review comments for each change as well as the timestamp and order of each new commit operation.  From there using git diff allows you to review the specific changes between the two versions.  Of course, you could look at code differences between larger shifts in time or multiple operations this way as well.
+
+How might using version control make you more confident to make changes that could break something?
+>>So long as you've created enough commit points, it becomes pretty easy to see where the problem started and what lines of code introduced an issue.  Pretty cool.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+>>Ready to move forward and get to usage to prep for my other class.  Tool definitely will make a difference.
+
